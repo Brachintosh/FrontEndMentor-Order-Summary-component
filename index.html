@@ -12,42 +12,48 @@
   <style>
     .attribution { font-family: 'Red Hat Display', sans-serif;font-size: 11px; color: hsl(245, 75%, 52%); text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); padding: 10px}
-    .body-html { font-family: 'Red Hat Display', sans-serif; font-size: 16px; text-align: center; border: solid 2px black; border-radius: 15px;
-                 display: flex; flex-direction: column; justify-content: center; margin: 10px;}
-    .img { max-width: 100%; height: 180px; border-radius: 15px; margin: auto; padding: 5%;}
-    h2 { font-weight: 500;}
-    .box1 { display: flex; flex-direction: column; justify-content: center; color: hsl(223, 74%, 27%); padding: 20px;}
-    .box2 { display: flex; flex-direction: column; justify-content: center; color: hsl(228, 71%, 61%)}
-    .lil-box { color: white; background-color: hsl(228, 45%, 44%); width: 30%; min-height: 2vh; border-radius: 5px; padding: 6px 10px;}
-
+    .body-html { color: hsla(228, 38%, 31%, 0.897); font-family: 'Red Hat Display', sans-serif; font-size: 16px; text-align: center; border: solid 1px black; border-radius: 15px;
+                 display: flex; flex-direction: column; justify-content: center; margin: 8vh 75vh; height:85vh;}
+    .img { width: 100%; height: 180px; border-radius: 15px; display: flex; flex-direction:initial; justify-content: flex-start;}
+    h2 { color: hsl(228, 45%, 44%);font-weight: 500;}
+    .box1 { display: flex; flex-direction: column; justify-content: center; color: hsl(223, 74%, 27%);}
+    .box2 { display: flex; flex-direction: column; align-items: center; color: hsl(228, 71%, 61%)}
+    .lil-box { color: white; background-color: hsl(228, 45%, 44%); width: 30%; min-height: 4vh; border-radius: 1.3vh}
+    .box1-div { display: flex; flex-direction: row; justify-content: space-around; border: dotted 3px blue}
+    #box1-text { display: flex;flex-direction: column; justify-content: center;}
+    #box1-a, #box1-b{ display: flex; flex-direction: column; justify-content: center; border: solid 6px green}
 
   </style>
 </head>
-<body>
-<div class="body-html">
-  <div ><img class="img" src="./images/illustration-hero.svg" alt="Italian Trulli"></div>
+<body class="body-html">
 
-  <div class="box1">
+
+  <div ><img class="img" src="./images/illustration-hero.svg" alt="Illustration-hero"></div>
+
   <h2>Order Summary</h2>
-  <div>
+  <div class="box1">
+  <div id="box1-text">
     You can now listen to millions of songs, audiobooks, and podcasts on any 
     device anywhere you like!
-  </div>
-  <div>
-    <div>
+  </div><br/>
+
+  <div class="box1-div">
+    <div id="box1-a">
       Annual Plan
       $59.99/year
     </div>
-  
-    <u>Change</u>
-  </div>
+    <div id="box1-b">
+      <u>Change</u>
+    </div>
+  </div><br/>
+
 </div>
   <div class="box2">
     <div class="lil-box">
       Proceed to Payment
-    </div>
+    </div><br/>
     <div class="lil-box2">
-      Cancel Order...
+      Cancel Order
     </div>
   </div>
   <br/><br/>
@@ -57,6 +63,7 @@
     Coded by <a href="https://github.com/Brachintosh/FrontEndMentor-Order-Summary-component">brachintosh</a>.
   </div>
 
-</div>
+
+
 </body>
 </html>
