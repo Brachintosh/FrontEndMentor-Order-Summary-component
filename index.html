@@ -13,14 +13,16 @@
     .attribution { font-family: 'Red Hat Display', sans-serif;font-size: 11px; color: hsl(245, 75%, 52%); text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); padding: 10px}
     .body-html { color: hsla(228, 38%, 31%, 0.897); font-family: 'Red Hat Display', sans-serif; font-size: 16px; text-align: center; border: solid 1px black; border-radius: 15px;
-                 display: flex; flex-direction: column; justify-content: center; margin: 8vh 75vh; height:85vh;}
-    .img { width: 100%; height: 180px; border-radius: 15px; display: flex; flex-direction:initial; justify-content: flex-start;}
+                 display: flex; flex-direction: column; justify-content: center; margin: 8vh 78vh; height:85vh;}
+    .img { width: 100%; height: 190px; border-radius: 15px; display: flex; flex-direction:initial; justify-content: flex-start;}
     h2 { color: hsl(228, 45%, 44%);font-weight: 500;}
-    .box1 { display: flex; flex-direction: column; justify-content: center; color: hsl(223, 74%, 27%);}
+    .box1 { display: flex; flex-direction: column; justify-content: center; color: hsl(223, 74%, 27%); }
     .box2 { display: flex; flex-direction: column; align-items: center; color: hsl(228, 71%, 61%)}
-    .lil-box { color: white; background-color: hsl(228, 45%, 44%); width: 30%; min-height: 4vh; border-radius: 1.3vh}
+    .lil-box { font-size:12px; font-weight: 500; display: flex; justify-content: center; align-items:center; padding-top: 4px; color: white; background-color: hsl(228, 45%, 44%); width: 70%; height: 5vh; border-radius: 1.3vh; transition: background-color 350ms;}
+    .lil-box:hover { background-color: rgba(165, 42, 42, 0.801);  transform: rotate(20deg);}
+    .lil-box2 { font-size:12px; font-weight: 300; color: hsl(228, 71%, 61%)}
     .box1-div { display: flex; flex-direction: row; justify-content: space-around; border: dotted 3px blue}
-    #box1-text { display: flex;flex-direction: column; justify-content: center;}
+    #box1-text { font-size: 12px; display: flex;flex-direction: column; justify-content: center;}
     #box1-a, #box1-b{ display: flex; flex-direction: column; justify-content: center; border: solid 6px green}
 
   </style>
@@ -45,7 +47,7 @@
     <div id="box1-b">
       <u>Change</u>
     </div>
-  </div><br/>
+  </div><br/><br/>
 
 </div>
   <div class="box2">
@@ -56,7 +58,7 @@
       Cancel Order
     </div>
   </div>
-  <br/><br/>
+  <br/>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
